@@ -1,0 +1,6 @@
+#write file
+#Sun Nov 11 11:53:41 CST 2018
+day=23
+age=22
+year=2004
+month=3
