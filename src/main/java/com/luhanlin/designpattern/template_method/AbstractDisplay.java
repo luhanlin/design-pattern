@@ -14,7 +14,7 @@ public abstract class AbstractDisplay {
     protected abstract void print();
     protected abstract void close();
 
-    // 表示不可被继承的方法
+    // 表示不可被继承后覆盖的方法
     public final void display(){
         open();
 
