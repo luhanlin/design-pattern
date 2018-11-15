@@ -69,4 +69,12 @@ public class FastSort implements Sort{
         data[i] = data[j];
         data[j] = base;
     }
+
+    public static void main(String[] args) {
+
+        String dateStr = "2018-05-24 00:00:00";
+        long longDate = Long.valueOf(dateStr.replaceAll("[-\\s:]",""));
+        System.out.println(longDate);
+//        System.out.println("2019-08-03".compareTo(null));
+    }
 }
