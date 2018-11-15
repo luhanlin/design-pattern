@@ -1,5 +1,7 @@
 package com.luhanlin.designpattern.strategy;
 
+import com.luhanlin.designpattern.strategy.practice.RandomStrategy;
+
 /**
  * 类详细描述：
  *
@@ -12,7 +14,8 @@ public class Main {
 
     public static void main(String[] args) {
         Player xiaoming = new Player("xiaoming", new WinStrategy());
-        Player john = new Player("John", new WinStrategy());
+//        Player john = new Player("John", new WinStrategy());
+        Player john = new Player("John", new RandomStrategy());
 
         for (int i = 0; i < 10000; i++) {
             Hander hander01 = xiaoming.nextHandler();
