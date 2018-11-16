@@ -1,4 +1,4 @@
-package com.luhanlin.designpattern.composite;
+package com.luhanlin.designpattern.visitor;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -47,7 +47,17 @@ public class Directory extends Entity {
     }
 
     @Override
+    public Iterator getIterable() {
+        return list.iterator();
+    }
+
+    @Override
     public void add(Entity entity){
         list.add(entity);
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.vistor(this);
     }
 }
