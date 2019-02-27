@@ -9,7 +9,7 @@ package com.luhanlin.designpattern.singleton;
  * @mail allen_lu_hh@163.com
  * 创建时间：2018/11/11 10:02 PM
  */
-public class HungrySingleton02 {
+public final class HungrySingleton02 {
 
     private static HungrySingleton02 demo = null;
 

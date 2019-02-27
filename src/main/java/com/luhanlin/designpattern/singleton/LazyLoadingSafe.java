@@ -8,7 +8,7 @@ package com.luhanlin.designpattern.singleton;
  * @mail allen_lu_hh@163.com
  * 创建时间：2018/11/11 10:09 PM
  */
-public class LazyLoadingSafe {
+public final class LazyLoadingSafe {
 
     private static LazyLoadingSafe lazyLoading;
 
