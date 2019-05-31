@@ -2,7 +2,7 @@ package com.luhanlin.designpattern.singleton;
 
 /**
  * 类详细描述：基础饿汉式单例
- *   与{@link HungrySingleton} 基本一样
+ *   与{@link HungrySingleton} 基本一样 多线程方式存在问题
  *
  * @author Mr_lu
  * @version 1.0

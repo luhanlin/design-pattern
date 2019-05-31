@@ -8,15 +8,15 @@ package com.luhanlin.designpattern.singleton;
  * @mail allen_lu_hh@163.com
  * 创建时间：2018/11/11 10:09 PM
  */
-public final class LazyLoadingIncurity {
+public final class LazyLoadingUnSafety {
 
-    private static LazyLoadingIncurity lazyLoading;
+    private static LazyLoadingUnSafety lazyLoading;
 
-    private LazyLoadingIncurity(){}
+    private LazyLoadingUnSafety(){}
 
-    public static LazyLoadingIncurity getInstance(){
+    public static LazyLoadingUnSafety getInstance(){
         if (lazyLoading == null){
-            lazyLoading = new LazyLoadingIncurity();
+            lazyLoading = new LazyLoadingUnSafety();
         }
         return lazyLoading;
     }

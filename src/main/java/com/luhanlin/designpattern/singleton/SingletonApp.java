@@ -10,7 +10,7 @@ import java.util.HashMap;
  * @mail allen_lu_hh@163.com
  * 创建时间：2018/11/11 10:04 PM
  */
-public class Main {
+public class SingletonApp {
 
     public static void main(String[] args) {
         System.out.println("start");
@@ -24,8 +24,8 @@ public class Main {
 //        HungrySingleton02 demo02 = HungrySingleton02.getInstance();
 
         // 测试线程不安全的懒汉式
-//        LazyLoadingIncurity demo01 = LazyLoadingIncurity.getInstance();
-//        LazyLoadingIncurity demo02 = LazyLoadingIncurity.getInstance();
+        LazyLoadingUnSafety demo01 = LazyLoadingUnSafety.getInstance();
+        LazyLoadingUnSafety demo02 = LazyLoadingUnSafety.getInstance();
 
         // 测试线程安全的懒汉式
 //        LazyLoadingSafe demo01 = LazyLoadingSafe.getInstance();
@@ -36,8 +36,8 @@ public class Main {
 //        InnerClassSingleton demo02 = InnerClassSingleton.getInstance();
 
         // 测试枚举单例
-        EnumSingleton demo01 = EnumSingleton.getInstance();
-        EnumSingleton demo02 = EnumSingleton.getInstance();
+//        EnumSingleton demo01 = EnumSingleton.getInstance();
+//        EnumSingleton demo02 = EnumSingleton.getInstance();
 //
 //        System.out.println(demo01.getTickets());
 //        System.out.println(demo02.getTickets());

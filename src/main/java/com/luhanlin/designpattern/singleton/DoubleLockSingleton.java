@@ -18,6 +18,11 @@ public final class DoubleLockSingleton {
     private Socket socket;
 
     private DoubleLockSingleton(){
+
+        // 此处阻止通过反射实例化实例
+        if (singleton != null) {
+            throw new IllegalStateException("Already initialized.");
+        }
         this.socket = new Socket();
     }
 

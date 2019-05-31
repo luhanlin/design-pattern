@@ -12,7 +12,7 @@ package com.luhanlin.designpattern.singleton;
  */
 public final class HungrySingleton {
 
-    private static HungrySingleton demo = new HungrySingleton();
+    private static final HungrySingleton demo = new HungrySingleton();
 
     private HungrySingleton(){}
 

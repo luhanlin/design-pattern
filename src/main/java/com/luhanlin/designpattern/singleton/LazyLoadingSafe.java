@@ -12,7 +12,13 @@ public final class LazyLoadingSafe {
 
     private static LazyLoadingSafe lazyLoading;
 
-    private LazyLoadingSafe(){}
+    private LazyLoadingSafe(){
+        if (lazyLoading == null) {
+            lazyLoading = this;
+        } else {
+            throw new IllegalStateException("Already initialized.");
+        }
+    }
 
     public static synchronized LazyLoadingSafe getInstance(){
         if (lazyLoading == null){
