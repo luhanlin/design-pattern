@@ -13,6 +13,7 @@ public final class LazyLoadingSafe {
     private static LazyLoadingSafe lazyLoading;
 
     private LazyLoadingSafe(){
+        // 避免通过反射进行实例的初始化
         if (lazyLoading == null) {
             lazyLoading = this;
         } else {
@@ -20,6 +21,10 @@ public final class LazyLoadingSafe {
         }
     }
 
+    /**
+     * 通过synchronized 关键字进行实例化方法的线程安全
+     * @return LazyLoadingSafe 返回的单实例
+     */
     public static synchronized LazyLoadingSafe getInstance(){
         if (lazyLoading == null){
             lazyLoading = new LazyLoadingSafe();

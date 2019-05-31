@@ -18,6 +18,7 @@ public class EnumSingleton {
         return Singleton.SINGLETON.getInstance();
     }
 
+    // 线程不安全
     public int getTickets(){
         return tickets++;
     }
